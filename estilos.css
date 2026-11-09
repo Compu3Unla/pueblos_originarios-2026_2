@@ -1,22 +1,81 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: '';
-    src: url('') format('truetype');
+    font-family: "inter";
+    src: url('fuentes/inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: '';
-    src: url('') format('truetype');
+    font-family: 'inter italic';
+    src: url('fuentes/inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url('fuentes/inria_serif/InriaSerif-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: '';
-    src: url('') format('truetype');
+    font-family: 'inria';
+    src: url('fuentes/inria_serif/InriaSerif-Italic.ttf') format('truetype');
     font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-Light.ttf) format('truetype');
+    font-weight: light;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-LightItalic.ttf) format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+*{
+    font-family: "inter",sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+     background-color: #E9E5DA 
+}
+
+footer{
+    background-color: #2A1D15;
+}
+
+form{
+   
+}
+
+#formulario {
+    display: flex
+}
+
