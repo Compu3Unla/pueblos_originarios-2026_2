@@ -247,3 +247,160 @@ form{
         transform: translateX(-50%);
     }
 }
+
+
+
+/* FORMULARIO */
+
+#formulario {
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    padding: 32px 6.35%;
+    background-color: #E9E5DA;
+    color: #2a1d15; 
+}
+
+/* Texto de presentación */
+
+#texto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    padding-right: 35px;
+    border-right: 1px solid #2a1d15;
+}
+
+#form1 img {
+    width: 112px;
+    height: auto;
+}
+
+#form1 h3 {
+    margin: 42px 0;
+    font-size: 65px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+#form1 p {
+    max-width: 478px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+#form2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+#form2 p {
+    max-width: 230px;
+    margin: 20px 0;
+    font-family: "Inria Serif", serif;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+#form2 img:last-child {
+    width: 180px;
+    height: auto;
+    margin-top: 25px;
+}
+
+/* Campos del formulario */
+
+#form3 {
+    width: 58%;
+}
+
+#form3 form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form3 label,
+#form3 p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#form3 .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form3 form > label {
+    margin-top: 12px;
+}
+
+#form3 input[type="text"],
+#form3 input[type="email"],
+#form3 textarea {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 1px solid #2a1d15;
+    background-color: transparent;
+    color: #2a1d15;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#form3 textarea {
+    height: 60px;
+    border: 2px solid #2a1d15;
+    resize: vertical;
+}
+
+/* Opciones de aporte */
+
+#form3 input[type="radio"] {
+    margin-left: 8px;
+    accent-color: #2a1d15;
+}
+
+#form3 label[for="audiovisual"],
+#form3 label[for="fisico"],
+#form3 label[for="información"],
+#form3 label[for="otro"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 8px 15px 8px 0;
+    font-size: 18px;
+}
+
+/* Adjuntar archivos */
+
+#form3 input[type="file"] {
+    width: 256px;
+    min-height: 55px;
+    margin-top: 8px;
+    border: 2px solid #2a1d15;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+
+#form3 input[type="submit"] {
+    width: 258px;
+    min-height: 55px;
+    margin-top: 10px;
+    border: none;
+    background-color: #2a1d15;
+    color: #E9E5DA;
+    font-family: inherit;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form3 input[type="submit"]:hover {
+    background-color: #84aab7;
+}
