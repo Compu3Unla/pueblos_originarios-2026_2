@@ -75,7 +75,175 @@ form{
    
 }
 
+
+
+/* formulario */
 #formulario {
     display: flex
 }
 
+
+
+
+/* Medioteca */
+
+
+/* Presentación de la videoteca */
+
+.presentacion-videoteca {
+    position: relative;
+    overflow: hidden;
+    padding: 55px 6.5% 100px;
+    background-color: #2a1d15;
+}
+
+
+/* Fondo decorativo */
+
+.fondo-videoteca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 909px;
+    opacity: 0.15;
+}
+
+.fondo-videoteca img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Título y presentación */
+
+.texto-videoteca {
+    position: relative;
+    margin-bottom: 104px;
+}
+
+.texto-videoteca h1 {
+    margin: 0 0 12px;
+    color: #e9e5da;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.texto-videoteca p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Videos principales */
+
+.videos-principales {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+.video-principal {
+    flex: 1;
+}
+
+.video-principal video {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+
+.video-principal p {
+    margin: 12px 0 0;
+    font-size: 16px;
+}
+
+
+
+/* Sección más videos */
+
+.mas-videos {
+    overflow: hidden;
+    padding: 41px 6.4% 74px;
+    background-color: #e9e5da;
+    color: #29190f;
+}
+
+
+/* Título de más videos */
+
+.titulo-mas-videos {
+    margin: 0 0 25px;
+}
+
+.titulo-mas-videos h2 {
+    margin: 0;
+    color: #29190f;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+/* Carrusel de videos */
+
+.carrusel-videos {
+    overflow: hidden;
+    width: 100%;
+}
+
+.pista-videos {
+    display: flex;
+    width: max-content;
+    animation: carrusel 35s linear infinite;
+}
+
+
+/* Grupo de videos */
+
+.grupo-videos {
+    display: flex;
+    gap: 55px;
+    margin-right: 55px;
+}
+
+
+/* Cada video del carrusel */
+
+.video-carrusel {
+    width: 494px;
+    flex-shrink: 0;
+}
+
+.video-carrusel video {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    background-color: #000000;
+    box-shadow: 0 10px 20px #00000025;
+}
+
+.video-carrusel p {
+    margin: 12px 0 0;
+    color: #29190f;
+    font-size: 16px;
+}
+
+
+/* Animación del carrusel */
+
+.pista-videos:hover {
+    animation-play-state: paused;
+}
+
+@keyframes carrusel {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
