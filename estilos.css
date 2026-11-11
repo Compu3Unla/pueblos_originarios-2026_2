@@ -1,5 +1,410 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: "inter";
+    src: url('fuentes/inter/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inter italic';
+    src: url('fuentes/inter/Inter-Italic-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url('fuentes/inria_serif/InriaSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url('fuentes/inria_serif/InriaSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-Light.ttf) format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-LightItalic.ttf) format('truetype');
+    font-weight: light;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inria';
+    src: url(fuentes/inria_serif/InriaSerif-BoldItalic.ttf) format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+*{
+    font-family: "inter",sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+     background-color: #E9E5DA
+}
+
+footer{
+    background-color: #2A1D15;
+}
+
+form{
+
+}
+
+
+
+/* formulario */
+#formulario {
+    display: flex
+}
+
+
+
+
+/* Medioteca */
+
+
+/* Presentación de la videoteca */
+
+.presentacion-videoteca {
+    position: relative;
+    overflow: hidden;
+    padding: 55px 6.5% 100px;
+    background-color: #2a1d15;
+}
+
+
+/* Fondo decorativo */
+
+.fondo-videoteca {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 909px;
+    opacity: 0.15;
+}
+
+.fondo-videoteca img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Título y presentación */
+
+.texto-videoteca {
+    position: relative;
+    margin-bottom: 104px;
+}
+
+.texto-videoteca h1 {
+    margin: 0 0 12px;
+    color: #e9e5da;
+    font-size: 76px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.texto-videoteca p {
+    margin: 0;
+    font-size: 20px;
+}
+
+
+/* Videos principales */
+
+.videos-principales {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+.video-principal {
+    flex: 1;
+}
+
+.video-principal video {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+
+.video-principal p {
+    margin: 12px 0 0;
+    font-size: 16px;
+}
+
+
+
+/* Sección más videos */
+
+.mas-videos {
+    overflow: hidden;
+    padding: 41px 6.4% 74px;
+    background-color: #e9e5da;
+    color: #29190f;
+}
+
+
+/* Título de más videos */
+
+.titulo-mas-videos {
+    margin: 0 0 25px;
+}
+
+.titulo-mas-videos h2 {
+    margin: 0;
+    color: #29190f;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+/* Carrusel de videos */
+
+.carrusel-videos {
+    overflow: hidden;
+    width: 100%;
+}
+
+.pista-videos {
+    display: flex;
+    width: max-content;
+    animation: carrusel 35s linear infinite;
+}
+
+
+/* Grupo de videos */
+
+.grupo-videos {
+    display: flex;
+    gap: 55px;
+    margin-right: 55px;
+}
+
+
+/* Cada video del carrusel */
+
+.video-carrusel {
+    width: 494px;
+    flex-shrink: 0;
+}
+
+.video-carrusel video {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+    background-color: #000000;
+    box-shadow: 0 10px 20px #00000025;
+}
+
+.video-carrusel p {
+    margin: 12px 0 0;
+    color: #29190f;
+    font-size: 16px;
+}
+
+
+/* Animación del carrusel */
+
+.pista-videos:hover {
+    animation-play-state: paused;
+}
+
+@keyframes carrusel {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+/* FORMULARIO */
+
+#formulario {
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+    padding: 32px 6.35%;
+    background-color: #E9E5DA;
+    color: #2a1d15;
+}
+
+/* Texto de presentación */
+
+#texto-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32%;
+    padding-right: 35px;
+    border-right: 1px solid #2a1d15;
+}
+
+#form1 img {
+    width: 112px;
+    height: auto;
+}
+
+#form1 h3 {
+    margin: 42px 0;
+    font-size: 65px;
+    line-height: 1;
+    font-weight: 800;
+}
+
+#form1 p {
+    max-width: 478px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+#form2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+#form2 p {
+    max-width: 230px;
+    margin: 20px 0;
+    font-family: "Inria Serif", serif;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+#form2 img:last-child {
+    width: 180px;
+    height: auto;
+    margin-top: 25px;
+}
+
+/* Campos del formulario */
+
+#form3 {
+    width: 58%;
+}
+
+#form3 form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form3 label,
+#form3 p {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+#form3 .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#form3 form > label {
+    margin-top: 12px;
+}
+
+#form3 input[type="text"],
+#form3 input[type="email"],
+#form3 textarea {
+    width: 100%;
+    padding: 8px 5px;
+    border: none;
+    border-bottom: 1px solid #2a1d15;
+    background-color: transparent;
+    color: #2a1d15;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+#form3 textarea {
+    height: 60px;
+    border: 2px solid #2a1d15;
+    resize: vertical;
+}
+
+/* Opciones de aporte */
+
+#form3 input[type="radio"] {
+    margin-left: 8px;
+    accent-color: #2a1d15;
+}
+
+#form3 label[for="audiovisual"],
+#form3 label[for="fisico"],
+#form3 label[for="información"],
+#form3 label[for="otro"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin: 8px 15px 8px 0;
+    font-size: 18px;
+}
+
+/* Adjuntar archivos */
+
+#form3 input[type="file"] {
+    width: 256px;
+    min-height: 55px;
+    margin-top: 8px;
+    border: 2px solid #2a1d15;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* Botón de envío */
+
+#form3 input[type="submit"] {
+    width: 258px;
+    min-height: 55px;
+    margin-top: 10px;
+    border: none;
+    background-color: #2a1d15;
+    color: #E9E5DA;
+    font-family: inherit;
+    font-size: 21px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form3 input[type="submit"]:hover {
+    background-color: #84aab7;
+}
+
 * {
     box-sizing: border-box;
 }

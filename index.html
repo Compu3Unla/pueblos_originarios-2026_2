@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pueblos Originarios</title>
     <link rel="stylesheet" href="estilos.css" />
+    <link rel="icon" type="image/x_icon" href="imagenes/generales/logo_color.png">
 </head>
 
 <body>
@@ -30,10 +31,102 @@
     </header>
 
     <main>
-        <section></section>
+
+
+
+
+
+        <section id="formulario">
+            <div id="texto-form">
+                <div id="form1">
+                    <img src="imagenes/svg/division.svg" alt="simbolo" height="30px" width="60px">
+                    <h3>COMPARTI TU HISTORIA O APORTE</h3>
+                    <p>¿Conocés un pueblo originario, tenés materiales, fotos o información que quieras compartir? Nos
+                        encantería recibir tu aporte para seguir construyendo juntos este espacio.</p>
+                </div>
+                <div id="form2">
+                    <img src="imagenes/svg/division.svg" alt="simbolo" height="30px" width="60px">
+                    <p>Tu contribución también es parte de esta historia.</p>
+                    <img src="imagenes/svg/simbolos.svg" alt="simbolo" />
+                </div>
+            </div>
+
+            <div id="form3">
+
+                <form method="post" action="" target="_blank" enctype="multipart/form-data">
+                    <div class="form">
+                        <label for="nombre">Nombre*</label>
+                        <input type="text" name="nombre" id="nombre" maxlength="20" required>
+                    </div>
+
+                    <label for="apellido">Apellido*</label>
+                    <input type="text" name="apellido" id="apellido" maxlength="20" required>
+
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" maxlength="20" required>
+
+
+                    <p>Tipo de aporte*</p>
+                    <label for="audiovisual">Material audiovisual <input type="radio" name="aporte" value="audiovisual"
+                            id="audiovisual"></label>
+                    <label for="fisico">Material físico <input type="radio" name="aporte" value="físico"
+                            id="físico"></label>
+                    <label for="información">Información <input type="radio" name="aporte" value="información"
+                            id="información"></label>
+                    <label for="otro">Otro<input type="radio" name="aporte" value="radio id=" radio></label>
+
+
+
+                    <label for="mensaje">Mensaje/Descripción*</label>
+                    <textarea name="mensaje" id="mensaje"></textarea required>
+
+            <label for="archivos">Adjuntar archivos(fotos,documentos,etc)</label>
+            <input type="file">
+
+                <input type="submit" formenctype="multipart/form-data">
+                </textarea>
+                </form>
+            </div>
+
+        </section>
     </main>
 
     <footer>
+        <div id="footer">
+            <div id="presentacion-footer">
+                <img src="imagenes/logo.png" alt="Logo Pueblos Originarios">
+                <p>
+                    Pueblos originarios historias, culturas y territorios
+                    que forman parte de nuestra identidad. explorá
+                </p>
+            </div>
+            <div class="items">
+                <h3>EXPLORÁ</h3>
+                <a href="#">Mediateca</a>
+                <a href="#">Ubicación</a>
+                <a href="#">Efemérides</a>
+                <a href="#">Áreas culturales</a>
+            </div>
+            <div class="items">
+                <h3>CONOCÉ</h3>
+                <a href="#">Pueblos originarios</a>
+                <a href="#">Historia y cultura</a>
+                <a href="#">Territorios</a>
+                <a href="#">Actualidad</a>
+            </div>
+            <div id="redes">
+                <div class="iconos">
+                    <a href="#"><img src="" alt="Instagram"></a>
+                    <a href="#"><img src="" alt="TikTok"></a>
+                    <a href="#"><img src="" alt="YouTube"></a>
+                    <a href="#"><img src="" alt="Facebook"></a>
+                </div>
+                <div id="suscripcion">
+                    <input type="email" placeholder="Correo electrónico">
+                    <button>Suscribirse</button>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
