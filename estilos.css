@@ -602,7 +602,6 @@ body {
 }
 
 
-
 /* Footer */
 
 footer {
@@ -730,6 +729,7 @@ footer {
     height: 47px;
     background-color: #e9e5da;
     overflow: hidden;
+     border-radius: 12px;
 }
 
 #suscripcion input {
@@ -756,6 +756,8 @@ footer {
     font-weight: 500;
 }
 
+
+
 /* Línea horizontal inferior */
 
 #footer::after {
@@ -766,6 +768,33 @@ footer {
     width: 1668px;
     border-top: 1px solid #b77735;
 }
+
+/* Líneas verticales del footer */
+#footer::before {
+    content: "";
+    position: absolute;
+    top: 92px;
+    left: 0;
+    width: 1668px;
+    height: 145px;
+    pointer-events: none;
+    background:
+        linear-gradient(to right,
+            transparent 671px,
+            #b77735 671px,
+            #b77735 672px,
+            transparent 672px,
+            transparent 1006px,
+            #b77735 1006px,
+            #b77735 1007px,
+            transparent 1007px,
+            transparent 1298px,
+            #b77735 1298px,
+            #b77735 1299px,
+            transparent 1299px
+        );
+}
+
 
 /* tehuelches galería */
 
