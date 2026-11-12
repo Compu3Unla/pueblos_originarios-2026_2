@@ -465,7 +465,7 @@ body {
 .buscador img {
     object-fit: contain;
 }
-/* header */
+
 
 
 
@@ -585,4 +585,21 @@ body {
     line-height: 1.5;
     color: #29190F;
     margin-bottom: 15px;
+}
+
+
+/* footer */
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.iconos img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
