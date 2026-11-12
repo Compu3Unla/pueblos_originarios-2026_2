@@ -482,3 +482,124 @@ body {
     object-fit: contain;
 }
 /* header */
+
+
+
+/* index */
+
+#inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: clamp(10px, 1vw, 18px);
+    padding: 0 6.3%;
+    width: 100%;
+    aspect-ratio: 1920 / 724;
+    background-image: url(imagenes/index/inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.presentacion-inicio {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(12px, 1.2vw, 23px);
+    width: 35%;
+}
+
+#inicio h2 {
+ 
+    color: #b77e33;
+    font-size: 1rem;
+    font-weight: 700;
+    
+}
+
+.texto-inicio {
+    display: block;
+    width: 34%;
+    height: auto;
+}
+
+#inicio h1 {
+    width: 35%;
+    margin: 10px 0 0;
+    color: #E9E5DA;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.tarjeta {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tarjeta img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta h3 {
+    background-color: #29190F;
+    color: #FFF7E7;
+    text-align: center;
+    padding: 15px 5px;
+    margin: 0;
+}
+
+.seccion-raul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;;;
+
+    background-color: #E9E5DA;
+    padding: 80px 100px;
+    border-top: 1px solid #8C8578;
+}
+
+.imagen-raul img {
+    display: block;
+}
+
+.imagen-raul p {
+    font-size: 1rem;
+    color: #B77B35;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+.contenido-raul {
+    width: 600px;
+}
+
+.contenido-raul h2 {
+    font-size: 4rem;
+    color: #B77B35;
+    margin-bottom: 15px;
+}
+
+.contenido-raul p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #29190F;
+    margin-bottom: 15px;
+}
