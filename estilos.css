@@ -419,6 +419,7 @@ body {
     z-index: 100;
     position: fixed;
     top: 0;
+    width: 100%;
 }
 
 .logo a {
@@ -949,13 +950,10 @@ footer {
 .ia {
     position: relative;
     z-index: 1;
-
     width: 475px;
     height: 163px;
-
     border-radius: 10px;
     background-color: #E9E5DA;
-
     margin-top: 30px;
 }
 
