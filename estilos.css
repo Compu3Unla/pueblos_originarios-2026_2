@@ -84,7 +84,7 @@ footer{
 .presentacion-videoteca {
     position: relative;
     overflow: hidden;
-    padding: 55px 6.5% 100px;
+    padding: 55px 6.5% 132px;
     background-color: #2a1d15;
 }
 
@@ -111,11 +111,11 @@ footer{
 
 .texto-videoteca {
     position: relative;
-    margin-bottom: 104px;
+    margin-bottom: 96px;
 }
 
 .texto-videoteca h1 {
-    margin: 0 0 12px;
+    margin: 0 0 20px;
     color: #e9e5da;
     font-size: 76px;
     font-weight: 700;
@@ -124,6 +124,7 @@ footer{
 
 .texto-videoteca p {
     margin: 0;
+    color: #e9e5da;
     font-size: 20px;
 }
 
@@ -135,13 +136,16 @@ footer{
     display: flex;
     align-items: flex-start;
     gap: 19px;
+    width: 100%;
 }
 
 .video-principal {
     flex: 1;
+    min-width: 0;
 }
 
 .video-principal video {
+    display: block;
     width: 100%;
     height: auto;
     background-color: #000000;
@@ -149,9 +153,9 @@ footer{
 
 .video-principal p {
     margin: 12px 0 0;
-    font-size: 16px;
+    color: #e9e5da;
+    font-size: 20px;
 }
-
 
 
 /* Sección más videos */
@@ -618,6 +622,8 @@ footer {
 }
 
 #presentacion-footer img {
+    width: 219px;
+    height: 83px;
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -638,8 +644,8 @@ footer {
     display: flex;
     flex-direction: column;
     height: 152px;
-    border-left: 1px solid #b77735;
-    padding-left: 15px;
+    border-top: 1px solid #b77735;
+    padding-top: 0;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -681,10 +687,7 @@ footer {
     align-items: center;
     width: 297px;
     height: 152px;
-    border-left: 1px solid #b77735;
-    padding-left: 15px;
     margin-top: 2px;
-    box-sizing: border-box;
     flex-shrink: 0;
 }
 
@@ -706,6 +709,28 @@ footer {
 .iconos img {
     display: block;
     object-fit: contain;
+}
+
+/* Tamaño individual de cada ícono */
+
+.iconos a:nth-child(1) img {
+    width: 51px;
+    height: 51px;
+}
+
+.iconos a:nth-child(2) img {
+    width: 43px;
+    height: 43px;
+}
+
+.iconos a:nth-child(3) img {
+    width: 69px;
+    height: 69px;
+}
+
+.iconos a:nth-child(4) img {
+    width: 50px;
+    height: 50px;
 }
 
 /* Suscripción */
