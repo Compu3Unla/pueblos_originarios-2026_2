@@ -610,7 +610,10 @@ footer {
     color: #e9e5da;
     width: 100%;
     height: 403px;
+    box-sizing: border-box;
 }
+
+/* Contenedor principal */
 
 #footer {
     display: flex;
@@ -632,8 +635,7 @@ footer {
 }
 
 #presentacion-footer img {
-    width: 219px;
-    height: 83px;
+    display: block;
     object-fit: contain;
     margin-bottom: 15px;
 }
@@ -654,8 +656,7 @@ footer {
     display: flex;
     flex-direction: column;
     height: 152px;
-    border-top: 1px solid #b77735;
-    padding-top: 0;
+    padding: 0;
     box-sizing: border-box;
     flex-shrink: 0;
 }
@@ -719,28 +720,6 @@ footer {
 .iconos img {
     display: block;
     object-fit: contain;
-}
-
-/* Tamaño individual de cada ícono */
-
-.iconos a:nth-child(1) img {
-    width: 51px;
-    height: 51px;
-}
-
-.iconos a:nth-child(2) img {
-    width: 43px;
-    height: 43px;
-}
-
-.iconos a:nth-child(3) img {
-    width: 69px;
-    height: 69px;
-}
-
-.iconos a:nth-child(4) img {
-    width: 50px;
-    height: 50px;
 }
 
 /* Suscripción */
