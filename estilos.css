@@ -1047,3 +1047,37 @@ footer {
     font-size: 16px;
     color: #E9E5DA;
 }
+
+
+
+
+
+
+.tarjeta {
+    position: relative;
+    overflow: hidden;
+    background-color: #29190F;
+}
+
+.tarjeta_texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 35px);
+
+    background-color: #29190F;
+    color: #E9E5DA;
+
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 40px 25px;
+    box-sizing: border-box;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tarjeta:hover .tarjeta_texto {
+    opacity: 1;
+}
