@@ -1239,25 +1239,75 @@ footer {
 
 
 
+
+
+/* MENÚ HAMBURGUESA - DESKTOP */
+
+.menu_toggle,
+.menu_hamburguesa {
+    display: none;
+}
+
+
 @media screen and (max-width: 600px) {
 
+    /* NAVEGACIÓN */
 
     .nav {
-        position: static;
-        flex-direction: column;
-        padding: 15px 20px;
+        position: relative;
+        display: grid;
+        grid-template-columns: 64px 1fr;
+        min-height: 80px;
+        padding: 0 20px;
         gap: 15px;
+    }
+
+    .menu_toggle {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+    }
+
+    .menu_hamburguesa {
+        display: flex;
+        flex-direction: column;
+        justify-self: end;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu_hamburguesa span {
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: #E9E5DA;
     }
 
     .hipervinculos {
-        flex-wrap: wrap;
-        gap: 15px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+        background-color: #29190F;
+        border-radius: 10px;
+        z-index: 101;
+    }
+
+    .menu_toggle:checked ~ .hipervinculos {
+        display: flex;
     }
 
     .buscador {
-        width: 100%;
+        display: none;
     }
 
+    /* INICIO */
 
     main {
         margin-top: 0;
@@ -1287,6 +1337,7 @@ footer {
         font-size: 0.8rem;
     }
 
+    /* TARJETAS Y SECCIONES */
 
     .contenedor-tarjetas,
     .seccion-raul,
@@ -1317,6 +1368,7 @@ footer {
         height: auto;
     }
 
+    /* FORMULARIO */
 
     #texto-form {
         padding-right: 0;
@@ -1327,6 +1379,7 @@ footer {
         max-width: 100%;
     }
 
+    /* FOOTER */
 
     footer,
     #footer,
