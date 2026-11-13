@@ -1132,12 +1132,29 @@ footer {
     text-decoration: none;
 }
 
-.tarjeta_click:checked ~ .tarjeta_pueblos {
+.tarjeta_click:checked~.tarjeta_pueblos {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-.tarjeta_click:checked ~ .tarjeta_texto {
+.tarjeta_click:checked~.tarjeta_texto {
     opacity: 0;
+}
+
+.error_404 {
+    color: #84AAB7;
+    font-size: 2rem;
+}
+
+.logo_error {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    top: -70px;
+}
+
+.error_titulo {
+    padding: 50px;
 }
