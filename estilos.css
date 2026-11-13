@@ -65,6 +65,7 @@
 
 main {
     margin-top: 90px;
+   
 }
 
 body {
@@ -1232,3 +1233,22 @@ footer {
     visibility: visible;
     }
     
+    @media screen and (max-width:600px ) {
+
+}
+  .seccion-raul{
+        flex-direction: column-reverse
+           
+          
+ }
+ .contenido-raul {
+    width: 100%;
+   
+ }
+ #formulario {
+        flex-direction: column
+        
+ }
+ #texto-form {
+    width: 100%;
+ }
