@@ -808,11 +808,11 @@ footer {
 
 
 .division_carrusel {
-    grid-column: 1;
+    grid-column: 1 / -1;
 }
 
 .galeria_carrusel_h2 {
-    grid-column: 1;
+    grid-column: 1 / -1;
     font-family: "Inter", sans-serif;
     font-weight: bold;
     font-size: 50px;
@@ -912,6 +912,7 @@ footer {
     font-size: 15px;
     font-weight: 200;
     color: #E9E5DA;
+    max-width: 275px;
 }
 
 .desplegables {
@@ -974,14 +975,17 @@ footer {
 
 .desplegables details:nth-of-type(1) summary {
     background-color: #84AAB7;
+    color: #E9E5DA;
 }
 
 .desplegables details:nth-of-type(2) summary {
     background-color: #B77735;
+    color: #E9E5DA;
 }
 
 .desplegables details:nth-of-type(3) summary {
     background-color: #E9E5DA;
+    color: #29190F;
 }
 
 .desplegables summary::-webkit-details-marker {
@@ -992,14 +996,14 @@ footer {
     font-size: 11px;
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #E9E5DA;
+    color: #29190F;
 }
 
 .tehuelche_details {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 15px;
-    color: #29190F;
+    color: #E9E5DA;
 }
 
 .tehuelche_infodetail {
@@ -1044,7 +1048,7 @@ footer {
     width: 366px;
     border-radius: 20px;
     box-sizing: border-box;
-    padding: 5px 15px;
+    pading: 5px 15px;
 }
 
 .tehuelche_duda {
