@@ -1168,3 +1168,67 @@ footer {
 .error_titulo {
     padding: 50px;
 }
+
+.pueblos {
+    width: 400px;
+    border: 10px solid #29190f;
+    padding: 40px;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+    position: absolute;
+    bottom: 250px;
+    left: 15%;
+    opacity: 0%;
+    visibility: hidden;
+    z-index: 100;
+}
+
+#contenedor_mapa {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+}
+
+#circulo-techuelches a {
+    position: absolute;
+    top: 78%;
+    left: 70%;
+}
+
+#circulo-techuelches:hover .pueblos {
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+
+#circulo-quechuas a {
+    position: absolute;
+       top: 62%;
+    left: 65%
+}
+.pueblos-quechua{
+    width: 400px;
+    border: 10px solid #29190f;
+    padding: 40px;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+    position: absolute;
+    bottom: 450px;
+    left: 15%;
+    opacity: 0%;
+    visibility: hidden;
+    z-index: 100;
+}
+
+
+#circulo-techuelches:hover .pueblos {
+    opacity: 1;
+    visibility: visible;
+}
+    #circulo-quechuas:hover .pueblos-quechua {
+    opacity: 1;
+    visibility: visible;
+    }
+    
