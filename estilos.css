@@ -65,7 +65,7 @@
 
 main {
     margin-top: 90px;
-   
+
 }
 
 body {
@@ -1200,16 +1200,17 @@ footer {
 #circulo-techuelches:hover .pueblos {
     opacity: 1;
     visibility: visible;
-    
+
 }
 
 
 #circulo-quechuas a {
     position: absolute;
-       top: 62%;
+    top: 62%;
     left: 65%
 }
-.pueblos-quechua{
+
+.pueblos-quechua {
     width: 400px;
     border: 10px solid #29190f;
     padding: 40px;
@@ -1228,27 +1229,149 @@ footer {
     opacity: 1;
     visibility: visible;
 }
-    #circulo-quechuas:hover .pueblos-quechua {
+
+#circulo-quechuas:hover .pueblos-quechua {
     opacity: 1;
     visibility: visible;
-    }
-    
-    @media screen and (max-width:600px ) {
-
 }
-  .seccion-raul{
-        flex-direction: column-reverse
-           
-          
- }
- .contenido-raul {
-    width: 100%;
-   
- }
- #formulario {
-        flex-direction: column
-        
- }
- #texto-form {
-    width: 100%;
- }
+
+
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    .nav {
+        position: static;
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .hipervinculos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .buscador {
+        width: 100%;
+    }
+
+
+    main {
+        margin-top: 0;
+    }
+
+    #inicio {
+        min-height: 420px;
+        padding: 40px 20px;
+        aspect-ratio: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .texto-inicio {
+        width: 85%;
+        height: auto;
+    }
+
+    #inicio h1 {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    #inicio h2 {
+        font-size: 0.8rem;
+    }
+
+
+    .contenedor-tarjetas,
+    .seccion-raul,
+    #formulario,
+    #footer {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .seccion-raul {
+        flex-direction: column-reverse;
+    }
+
+    .tarjeta,
+    .contenido-raul,
+    .imagen-raul,
+    #texto-form,
+    #form3 {
+        width: 80%;
+    }
+
+    .tarjeta img,
+    .imagen-raul img,
+    #presentacion-footer img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    #texto-form {
+        padding-right: 0;
+        border-right: none;
+    }
+
+    #form3 input {
+        max-width: 100%;
+    }
+
+
+    footer,
+    #footer,
+    #presentacion-footer,
+    #redes,
+    #suscripcion {
+        width: 100%;
+        height: auto;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    #footer .items,
+    #presentacion-footer p {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #presentacion-footer p {
+        white-space: normal;
+        overflow-wrap: break-word;
+    }
+
+    #presentacion-footer img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #suscripcion {
+        flex-direction: column;
+    }
+
+    #suscripcion input,
+    #suscripcion button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #footer::before,
+    #footer::after {
+        display: none;
+    }
+}
