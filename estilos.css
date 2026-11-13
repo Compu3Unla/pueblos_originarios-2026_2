@@ -729,7 +729,7 @@ footer {
     height: 47px;
     background-color: #e9e5da;
     overflow: hidden;
-     border-radius: 12px;
+    border-radius: 12px;
 }
 
 #suscripcion input {
@@ -791,8 +791,7 @@ footer {
             transparent 1298px,
             #b77735 1298px,
             #b77735 1299px,
-            transparent 1299px
-        );
+            transparent 1299px);
 }
 
 
@@ -1080,4 +1079,65 @@ footer {
 
 .tarjeta:hover .tarjeta_texto {
     opacity: 1;
+}
+
+
+
+
+
+.tarjeta_click {
+    position: absolute;
+    opacity: 0;
+}
+
+.tarjeta_activar {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+}
+
+.tarjeta_pueblos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+
+    background-color: #B77B38;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.tarjeta_pueblos span,
+.tarjeta_pueblos a {
+    width: 100%;
+    background-color: #E9E5DA;
+    color: #29190F;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.tarjeta_click:checked ~ .tarjeta_pueblos {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.tarjeta_click:checked ~ .tarjeta_texto {
+    opacity: 0;
 }
