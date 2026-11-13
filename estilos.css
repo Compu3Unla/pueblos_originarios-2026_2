@@ -912,7 +912,6 @@ footer {
     font-size: 15px;
     font-weight: 200;
     color: #E9E5DA;
-    max-width: 275px;
 }
 
 .desplegables {
@@ -933,6 +932,7 @@ footer {
 .desplegables details:nth-of-type(1) {
     grid-column: 1;
     grid-row: 1;
+    background-color: #E9E5DA;
 }
 
 .desplegables p:nth-of-type(1) {
@@ -1048,7 +1048,7 @@ footer {
     width: 366px;
     border-radius: 20px;
     box-sizing: border-box;
-    pading: 5px 15px;
+    padding: 5px 15px;
 }
 
 .tehuelche_duda {
