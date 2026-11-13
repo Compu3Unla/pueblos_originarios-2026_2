@@ -1251,7 +1251,7 @@ footer {
 
 @media screen and (max-width: 600px) {
 
-    /* NAVEGACIÓN */
+    
 
     .nav {
         position: relative;
@@ -1307,7 +1307,7 @@ footer {
         display: none;
     }
 
-    /* INICIO */
+   
 
     main {
         margin-top: 0;
@@ -1337,7 +1337,7 @@ footer {
         font-size: 0.8rem;
     }
 
-    /* TARJETAS Y SECCIONES */
+    
 
     .contenedor-tarjetas,
     .seccion-raul,
@@ -1368,7 +1368,7 @@ footer {
         height: auto;
     }
 
-    /* FORMULARIO */
+    
 
     #texto-form {
         padding-right: 0;
@@ -1379,7 +1379,7 @@ footer {
         max-width: 100%;
     }
 
-    /* FOOTER */
+    
 
     footer,
     #footer,
