@@ -932,7 +932,6 @@ footer {
 .desplegables details:nth-of-type(1) {
     grid-column: 1;
     grid-row: 1;
-    background-color: #E9E5DA;
 }
 
 .desplegables p:nth-of-type(1) {
@@ -996,7 +995,7 @@ footer {
     font-size: 11px;
     margin-top: 10px;
     margin-bottom: 5px;
-    color: #29190F;
+    color: #E9E5DA;
 }
 
 .tehuelche_details {
