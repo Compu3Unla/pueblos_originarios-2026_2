@@ -801,7 +801,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
-    padding-bottom: 25x;
+    padding-bottom: 25px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -866,12 +866,13 @@ footer {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
     isolation: isolate;
     padding-left: 7%;
     box-sizing: border-box;
     justify-items: start;
     align-content: center;
-    height: 51.72vw;
+    height: 46.5vw;
 }
 
 /* Imagen de fondo */
@@ -895,7 +896,7 @@ footer {
     height: 275px;
     grid-column: 1;
     grid-row: 1;
-    align-self: end;
+    align-self: center;
 }
 
 .tehuelche_titulo {
@@ -911,11 +912,12 @@ footer {
     font-size: 15px;
     font-weight: 200;
     color: #E9E5DA;
+    max-width: 275px;
 }
 
 .desplegables {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     width: 42%;
     max-width: 500px;
     display: grid;
@@ -967,18 +969,23 @@ footer {
     font-size: 11px;
     font-weight: bold;
     text-align: center;
+    grid-column: 1;
+    grid-row: 2;
 }
 
 .desplegables details:nth-of-type(1) summary {
     background-color: #84AAB7;
+    font-color: #E9E5DA;
 }
 
 .desplegables details:nth-of-type(2) summary {
     background-color: #B77735;
+    font-color: #E9E5DA;
 }
 
 .desplegables details:nth-of-type(3) summary {
     background-color: #E9E5DA;
+    font-color: #29190F;
 }
 
 .desplegables summary::-webkit-details-marker {
@@ -1004,6 +1011,7 @@ footer {
     font-weight: medium;
     font-size: 10px;
     line-height: 1.4;
+    font-color: #E9E5DA;
 }
 
 
@@ -1011,16 +1019,16 @@ footer {
 
 .ia {
     position: relative;
-    z-index: 1;
+    z-index: 10;
     width: 475px;
     height: 163px;
     border-radius: 10px;
     background-color: #E9E5DA;
     margin-top: 30px;
+    padding: 20px 25px;
     grid-column: 1;
     grid-row: 3;
     margin-top: 25px;
-    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -1031,6 +1039,7 @@ footer {
     font-size: 36px;
     color: #29190F;
     opacity: 23%;
+    margin: 0 0 5px 0;
 }
 
 .caja_preguntas {
@@ -1038,6 +1047,8 @@ footer {
     height: 37px;
     width: 366px;
     border-radius: 20px;
+    box-sizing: border-box;
+    pading: 5px 15px;
 }
 
 .tehuelche_duda {
